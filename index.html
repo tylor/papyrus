@@ -1,7 +1,37 @@
 <!doctype html>
   <head>
     <title>Papyrus This</title>
+    <style>
+    body {
+      font-family: Papyrus;
+      text-align: center;
+      background: url(background.jpg);
+    }
+    h1 {
+      font-size: 55px;
+      margin: 80px 0 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ae8f00), to(#000000));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      margin: 0 auto 0.5em auto;
+      width: 350px;
+      text-shadow: 0px 0px 3px rgba(255,255,255,0.8);
+    }
+    a {
+      color: white;
+      background: #7c6600;
+      text-decoration: none;
+      padding: 3px 10px 0px 10px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px #fff;
+    }
+    </style>
   </head>
   <body>
+    <h1>Papyrus This</h1>
+    <p>Drag this bookmarklet to your bookmarks bar to shapeshift websites freely:</p>
+    <a href="javascript:(function() {if(typeof jQuery=='undefined'){var j=document.createElement('script');j.type='text/javascript';j.onload=runthis;j.src='http://is.gd/uDgzgG';document.body.appendChild(j);}else{runthis();}function runthis(){$('*').css({'font-family':'Papyrus'});}})();">Papyrus This</a>
   </body>
 </html>
